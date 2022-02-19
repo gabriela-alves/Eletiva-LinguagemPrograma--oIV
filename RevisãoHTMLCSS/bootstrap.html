@@ -13,16 +13,46 @@
   <body class="container">
     <h1>Hello, world!</h1>
 
+    <div class="row">
+        <div class="col">
+          <label for="email" class="label-control">
+            Informe seu email:
+          </label>
+          <input type="email" class="form-control" id="email" name="email"/>
+        </div>
+        <div class="col">
+          <label for="senha" class="label-control">
+            Informe sua senha
+          </label>
+          <input type="password" class="form-control" id="senha" name="senha"/>
+        </div>
+    </div>
 
     <div class="row">
-        <div class="col-2">Coluna 1</div>
-        <div class="col-7">Coluna 2</div>
-        <div class="col-3">Coluna 3</div>
+      <div class="col d-flex justify-content-end">
+        <button type="submit" class="btn btn-success mt-5 mb-5">Enviar</button>
+      </div>
     </div>
-    <div class="row">
-        <div class="col">Coluna 1</div>
-        <div class="col">Coluna 2</div>
-    </div>
+
+
+    <table class="table table-success table-hover table-responsive">
+      <thead>
+        <tr>
+          <th>Coluna 1</th>
+          <th>Coluna 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dados</td>
+          <td>Dados</td>
+        </tr>
+        <tr>
+          <td>Dados</td>
+          <td>Dados</td>
+        </tr>
+      </tbody>
+    </table>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
