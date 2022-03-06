@@ -1,3 +1,13 @@
+<?php
+ //print_r($_POST) - exibindo o conteúdo do array
+ //echo $_POST["valor_pago"] - exibe um valor na tela
+
+ $valor_pago = $_POST['valor_pago'];
+ $valor_total = $_POST['valor_total'];
+
+ $troco = $valor_pago - $valor_total;
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -8,11 +18,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <link href="style.css" rel="stylesheet">
+
     <title>Exercicio 1 - Resultado</title>
   </head>
-  <body>
-  <h2 class="mt-5 display-6">TTTTTT</h2>
-
+  <body class="container">
+    <div id="box-valores">
+      <h2 class="mt-5 display-6">O troco é de: R$<?php echo $troco?></h2>
+    </div>
     
     <!-- Optional JavaScript; choose one of the two! -->
 
