@@ -18,7 +18,7 @@
 
     <link href="style.css" rel="stylesheet">
 
-    <title>Exercicio 1 - Resultado</title>
+    <title>Exercicio 2 - Resultado</title>
   </head>
   <body class="container">
     <div id="box-valores">
