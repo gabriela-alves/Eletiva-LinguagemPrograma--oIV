@@ -1,3 +1,9 @@
+<?php
+session_start();
+sort($_SESSION['numero'], SORT_NUMERIC);
+print_r($_SESSION['numero']);
+
+?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -19,6 +25,13 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <form action="resultado.php" method="post">
+
+        <input type="text" name="numero" value="">
+        <button type="submit">Inserir Valor</button>
+
+    </form>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

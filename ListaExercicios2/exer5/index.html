@@ -10,10 +10,24 @@
 
     <link href="style.css" rel="stylesheet">
     
-    <title>Hello, world!</title>
+    <title>Exercício 5</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="container mt-5">
+    <h1>Exercício 5</h1>
+
+    <form action="resultado.php" method="post">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Insira um valor</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Exemplo: 10">
+      </div>
+      <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-danger">
+              Ordenar
+            </button>
+        </div>
+      </div>
+    </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
