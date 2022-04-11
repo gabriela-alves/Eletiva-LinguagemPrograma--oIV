@@ -1,11 +1,4 @@
-<?php
-session_start();
-if (!empty($_SESSION['numero'])):
-sort($_SESSION['numero'], SORT_NUMERIC);
-endif;
-print_r($_SESSION['numero']);
 
-?>
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -18,10 +11,10 @@ print_r($_SESSION['numero']);
 
     <link href="style.css" rel="stylesheet">
     
-    <title>Exercício 3</title>
+    <title>Exercício 4</title>
   </head>
   <body class="container mt-5">
-    <h1>Exercício 3</h1>
+    <h1>Exercício 4</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

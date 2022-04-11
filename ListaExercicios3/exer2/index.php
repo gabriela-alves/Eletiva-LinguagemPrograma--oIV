@@ -1,9 +1,15 @@
 <?php
 session_start();
-if (!empty($_SESSION['numero'])):
-sort($_SESSION['numero'], SORT_NUMERIC);
+
+
+if(!isset($_SESSION['nomes'])):
+    $_SESSION['nomes'] = array();
 endif;
-print_r($_SESSION['numero']);
+
+if (!empty($_SESSION['nomes'])):
+sort($_SESSION['nomes']);
+endif;
+print_r($_SESSION['nomes']);
 
 ?>
 <!doctype html>
@@ -18,10 +24,10 @@ print_r($_SESSION['numero']);
 
     <link href="style.css" rel="stylesheet">
     
-    <title>Exercício 3</title>
+    <title>Exercício 2</title>
   </head>
   <body class="container mt-5">
-    <h1>Exercício 3</h1>
+    <h1>Exercício 2</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -30,7 +36,7 @@ print_r($_SESSION['numero']);
 
     <form action="resultado.php" method="post">
 
-        <input type="text" name="numero" value="">
+        <input type="text" name="nomes" value="">
         <button type="submit" name="inserir">Inserir Valor</button>
 
         <button type="submit" name="limpar">Limpar Valores</button>
