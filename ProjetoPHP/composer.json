@@ -1,0 +1,15 @@
+{
+    "name": "aluno/projeto-php",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\ProjetoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gabriela Alves",
+            "email": "ganascimento1@outlook.com"
+        }
+    ],
+    "require": {}
+}
